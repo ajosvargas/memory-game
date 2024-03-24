@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+#start {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 10px;
+}
+
+#gameboard {
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    width: 15%;
+    border: 1px solid black;
+    margin: 5px;
+    padding-top:15%;
+    border-radius: 5px;
+}
+
+.r {background-color: red;}
+.y {background-color: yellow;}
+.g {background-color: green;}
+.b {background-color: blue;}
+.o {background-color: orange;}
+.p {background-color: purple;}
+.h {background-color: hotpink;}
+.l {background-color: lightcoral;}
+.c {background-color: cyan;}
