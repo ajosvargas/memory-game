@@ -71,10 +71,12 @@ function checkForPairs() {
     } else if(compareArr[0] === compareArr[1] && score !== 1) {
         compareArr[0].classList.remove(compareArr[0].getAttribute('data-color'));
         compareArr[1].classList.remove(compareArr[1].getAttribute('data-color'));
+        // If same card clicked don't count it towards score
         score--;
         console.log(score);
     }
     else {
+        // one second to remove colors
         setTimeout(()=> {
             compareArr[0].classList.remove(compareArr[0].getAttribute('data-color'));
             compareArr[1].classList.remove(compareArr[1].getAttribute('data-color'));
@@ -100,6 +102,7 @@ function shuffleBoard(arr){
 }
 
 function createBoardItems (arr) {
+    // iterating over array to create boxes
     arr.forEach((color) => {
         let boardItem = document.createElement('div');
         boardItem.classList.add('square');
